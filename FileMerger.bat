@@ -1,0 +1,1 @@
+for /r . %%a in (*.csv) do for /f "usebackq tokens=*" %%b in ("%%a") do echo %%b,%%~nxa >> all.csv
